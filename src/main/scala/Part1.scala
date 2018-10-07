@@ -7,9 +7,9 @@ import implicits.TupleImplicits._
 
 object Part1 extends App {
 
-  val counter = CachedAndCountedFunction(sin)
+  val counter = FunctionCounter(sin)
 
-  val f = counter.getFunc
+  val f = counter.toFunction
 
   val dichPW = new PrintWriter(new File("dichotomy.csv"))
 

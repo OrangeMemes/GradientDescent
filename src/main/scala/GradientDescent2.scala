@@ -14,7 +14,7 @@ class GradientDescent2(start: (Double, Double), f: (Double, Double) => Double, v
     val (a, b) = vectorDirectedF.getMinInterval
 
     val minimumMethod = new GoldenMinimumMethod(a, b, vectorDirectedF)
-    while (minimumMethod.currentSpread > epsilon / 10)
+    while (minimumMethod.currentSpread > epsilon / 2)
       minimumMethod.makeAStep()
 
     val prevPosition = currentPosition

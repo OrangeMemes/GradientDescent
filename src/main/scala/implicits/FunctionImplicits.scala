@@ -7,7 +7,7 @@ import scala.annotation.tailrec
 object FunctionImplicits {
 
   implicit class Function1Pimp(func: Double => Double) {
-    def getMinInterval: (Double, Double) = getMinInterval(0, .1)
+    def getMinInterval: (Double, Double) = getMinInterval(0, 1)
 
     @tailrec
     final def getMinInterval(x: Double, step: Double): (Double, Double) = {

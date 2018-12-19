@@ -8,7 +8,7 @@ class SimpleCounter {
 
   def inc(): Int = {
     count = count + 1
-    count
+    return count
   }
 
   def currentCount: Int = count
